@@ -1,3 +1,4 @@
+#Day 2
 #print(1/0)
 #---------------------------------------------------------------------------
 #ZeroDivisionError                         Traceback (most recent call last)
