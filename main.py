@@ -1,3 +1,4 @@
+#Day 1
 """name="Dondapati Theerdha Purushotham"
 for i in range(3):
     print(name)
