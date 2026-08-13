@@ -1,3 +1,4 @@
+#Day 6
 #Frequecy Counting
 print("Frequency Counting: ")
 arr=[2,4,2,5,7,8,3,7,2,1,6]
