@@ -40,3 +40,28 @@ while left<=right:
     ans=mid 
     left=mid+1
 print(ans)
+print("================")
+# Sort the array using Bubble Sort algorithm
+# This method does not use any built-in sorting functions.
+
+# Initialize an array with unsorted elements
+a=[2,5,1,9,3,4,6,8,7]
+
+# Get the length of the array, which determines the number of passes needed
+n=len(a)
+
+# Outer loop: Iterate 'n' times (or n-1 times if considering passes)
+# Each pass places the largest unsorted element at its correct position at the end.
+for i in range(n):
+  # Inner loop: Iterate through the unsorted part of the array
+  # The '-i-1' ensures we don't compare elements that are already sorted
+  # at the end of the array (after 'i' passes, 'i' elements from the end are sorted).
+  for j in range(0,n-i-1):
+    # Compare adjacent elements
+    if a[j]>a[j+1]:
+      # If the current element is greater than the next element, swap them
+      # This 'bubbles up' the larger elements towards the end of the array
+      a[j],a[j+1]=a[j+1],a[j]
+
+# Print the sorted array
+print(a)
