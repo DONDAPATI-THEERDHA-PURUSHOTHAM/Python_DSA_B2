@@ -1,3 +1,5 @@
+#Day 5
+
 print("Find the sum of elements")
 #withot uing Built-in functions
 arr=[2,5,4,6,7,9]
