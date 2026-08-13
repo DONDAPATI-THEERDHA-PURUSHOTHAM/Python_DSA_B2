@@ -23,3 +23,20 @@ while left<=right:
   elif a[mid]<target: 
     left=mid+1
 print("================")
+#Find square root of 50 using binary search
+a=[5,7,12,17,23,36,47,54]
+left=0
+right=50
+ans=0
+while left<=right:
+  mid=(left+right)//2
+  if mid*mid==50:
+    ans=mid
+    break
+  elif mid*mid>50:
+    ans=mid
+    right=mid-1
+  elif mid*mid<50:
+    ans=mid 
+    left=mid+1
+print(ans)
