@@ -23,3 +23,18 @@ while left<=right:
   elif a[mid]<target: 
     left=mid+1
 print("================")
+#binary Search
+#Only in sorted lists
+a=[5,7,12,17,23,36,47,54]
+target=36
+left=0
+right=len(a)-1
+while left<=right:
+  mid=(left+right)//2
+  if a[mid]==target:
+    print(mid)
+    rght=mid-1
+  elif a[mid]>target:
+    right=mid-1
+  elif a[mid]<target: 
+    left=mid+1
